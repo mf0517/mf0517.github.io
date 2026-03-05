@@ -1,5 +1,5 @@
 body{
-        background-color: #c7dcf7;
+        background-color: #9CAF88;
     }
 p em {
     color : #601C2E;
@@ -10,7 +10,6 @@ p em {
 }
 nav {
     flex: 0, 1, 30%;
-    background-color:#9CAF88;
     font-size: large;
     font-style: bold;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -24,7 +23,7 @@ main {
 }
 aside {
     flex: 0, 1, 30%;
-    background-color: rgb(102, 153, 160);
+    
 }
 p span{
     color : rgb(30, 128, 0);
