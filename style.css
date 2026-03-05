@@ -1,5 +1,6 @@
 body{
         background-color: #9CAF88;
+        padding-top : 100px;
     }
 p em {
     color : #601C2E;
@@ -19,7 +20,8 @@ main {
     flex: 0, 1, 40%;
     background-color: lightgray;
     text-align: center;
-    padding-left: 80px;
+    padding-left: 100px;
+    padding-top : 50px;
 }
 aside {
     flex: 0, 1, 30%;
