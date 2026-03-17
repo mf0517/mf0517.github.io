@@ -6,6 +6,10 @@ p em {
     color : #601C2E;
     font-style :normal;
 }
+p { 
+    font-size: large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 #container {
     display : flex;
 }
