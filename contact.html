@@ -1,36 +1,75 @@
 <!DOCTYPE html>
-<html>
-    <head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
-    <link rel="icon" href="favicon.jpg">
-    <nav><a href="index.html">Back to home page</a><br>
-    <a href="resume.html">Resume</a>
-    <a href="gallery.html">gallery</a>
-    <a href="sandbox.html">Sandbox</a>
-    <a href="api.html">API Page</a>
-    </nav>
-    <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <form action="https://formsubmit.co/mfogle@hcc-nd.edu" target="_blank" method="POST">
-            <p>
-            <label for="first">First name</label>
-            <input type="text" name="first" id="first">
-            </p>
-            <p>
-            <label for="last">Last name</label>
-            <input type="text" name="last" id="last">
-            </p>
-            <p>
-            <label for="email">Email:</label>
-            <input type="text" name="email" id="email">
-            </p>
-            <p>
-            <textarea placeholder="Your Message"  name="message" style="width: 250px; field-sizing: content;"></textarea>
-            </p>
-            <button type="submit">Submit</button>
-            <input type="hidden" name="_autoresponse" value="Thank you for submitting an email! I will get to you shortly.">
-            <input type="hidden" name="_captcha" value="false">
-        </form>
+    <link rel="icon" href="favicon.jpg" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="hamburgerbutton.js" defer></script>
+  </head>
+  <body>
+    <div id="page-shell">
+      <header class="topbar">
+        <a class="brand" href="index.html">Matthew Fogle</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <nav class="nav-menu" id="nav-menu">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="sandbox.html">Sandbox</a></li>
+            <li><a href="api.html">API</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="page-content">
+        <div class="contact-container">
+            <div class="contact-header">
+                <h1>Get In Touch</h1>
+                <p class="contact-subtitle">I'd love to hear from you!</p>
+            </div>
+
+            <div class="contact-content">
+                <form action="https://formsubmit.co/mfogle@hcc-nd.edu" target="_blank" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label for="first">First Name</label>
+                        <input type="text" name="first" id="first" required placeholder="John">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="last">Last Name</label>
+                        <input type="text" name="last" id="last" required placeholder="Doe">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" name="email" id="email" required placeholder="your@email.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" placeholder="Write your message here..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                    <input type="hidden" name="_autoresponse" value="Thank you for submitting an email! I will get to you shortly.">
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
+
+                <div class="contact-info">
+                    <h3>Or reach out via:</h3>
+                    <div class="contact-methods">
+                        <p>📧 Email: <strong>mfogle@hcc-nd.edu</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

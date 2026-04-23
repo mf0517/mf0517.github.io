@@ -1,18 +1,36 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Sandbox</title>
-        <link rel="icon" href="favicon.jpg">
-        <nav><a href="index.html">Back to home page</a><br>
-        <a href="contact.html">Contact</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="resume.html">Resume</a>
-        <a href="api.html">API Page</a>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sandbox</title>
+    <link rel="icon" href="favicon.jpg" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="hamburgerbutton.js" defer></script>
+    <script src="hello.js" defer></script>
+  </head>
+  <body>
+    <div id="page-shell">
+      <header class="topbar">
+        <a class="brand" href="index.html">Matthew Fogle</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <nav class="nav-menu" id="nav-menu">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="sandbox.html">Sandbox</a></li>
+            <li><a href="api.html">API</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
         </nav>
-        <link rel="stylesheet" href="style.css">
-        <script src="hello.js"></script>
-    </head>
-    <body>
-        
-    </body>
+      </header>
+
+      <main class="page-content"></main>
+    </div>
+  </body>
 </html>

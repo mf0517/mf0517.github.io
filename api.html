@@ -1,21 +1,61 @@
 <!DOCTYPE html>
-<html>
-    <head>
-      <title>API Page</title>
-      <link rel="icon" href="favicon.png">
-      <link rel="stylesheet" href="style.css">
-      <script src="api.js"></script>
-    </head>
-    <body>
-        <nav><a href="resume.html">Resume</a><br>
-        <a href="gallery.html">gallery</a>
-        <a href="contact.html">contact</a>
-        <a href="sandbox.html">Sandbox</a>
-        <a href="index.html">Home</a>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API Page</title>
+    <link rel="icon" href="favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="api.js" defer></script>
+    <script src="hamburgerbutton.js" defer></script>
+  </head>
+  <body>
+    <div id="page-shell">
+      <header class="topbar">
+        <a class="brand" href="index.html">Matthew Fogle</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <nav class="nav-menu" id="nav-menu">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="sandbox.html">Sandbox</a></li>
+            <li><a href="api.html">API</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
         </nav>
-        <label for="book verse">Write Book Name For Verse:</label>
-        <input type="text" id="bookname" name="bookname" placeholder="Enter Bible Book Name: (e.g John)">
-        <button id="fetchBtn">Fetch Random Verse</button>
-        <div id="verseOutput"></div>
-    </body>
+      </header>
+
+      <main class="page-content">
+        <section class="hero-section">
+          <p class="eyebrow">API Explorer</p>
+          <h1>Random Bible Verse Finder</h1>
+          <p>Type a book name and uncover a meaningful verse from the API.</p>
+        </section>
+
+        <section class="api-card">
+          <div class="api-card__inner">
+            <form class="api-form" onsubmit="return false;">
+              <label for="bookname">Book name</label>
+              <input
+                type="text"
+                id="bookname"
+                name="bookname"
+                placeholder="Enter a Bible book, e.g. John"
+              />
+              <button id="fetchBtn" class="api-button" type="button">Fetch Random Verse</button>
+            </form>
+
+            <div id="verseOutput" class="verse-output">
+              <p class="placeholder-text">Your verse will appear here after you click the button.</p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>

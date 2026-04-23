@@ -1,40 +1,61 @@
 <!DOCTYPE html>
-  <html>
-    <head>
-      <title>Starting Page</title>
-      <link rel="icon" href="favicon.png">
-      <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-    <div id="container">
-      <nav><a href="resume.html">Resume</a><br>
-      <a href="gallery.html">gallery</a>
-      <a href="contact.html">contact</a>
-      <a href="sandbox.html">Sandbox</a>
-      <a href="api.html">API Page</a>
-      </nav>
-    <main>
-      <p>Hello, world!</p>
-      <p>I am Matthew Fogle</p>
-      <section>What I find interesting </section>
-      <h1><b>What we did in the class</b></h1>
-      <p>I have taken a web design class in highschool and I enjoyed creating a small website seeing how the URL's
-      and what not have worked so it has been cool seeing how each function particularly works with each other.<br>
-      We ended up making a<em> fully functional </em>game in the class which was pretty cool.<br>
-    <strong>My game was a clicker game.</strong></p>
-      <h2><b>What the game did</b></h2>
-      <p><em>It had a few buttons and images to click onto.</em><br>
-      <strong>It was my first game I had created</strong>
-      <span>did have to get a lot of help to figure out how to make all of the aspects work.</span>
-      But I had made it to where when you click a button you would increment the amount of money you would have.
-      Once you got to a certain amount of money you were able to upgrade your clicking to earn more money per click.<br>
-      although it was small and silly the coding aspect interested me a lot seeing the variables and way the button worked in coding just fascinated me.<br></p>
-      <h3>Other things</h3>
-      <p>The way video games are coded and the way they operate/function is what caused me to want to be a video game designer.<br>
-      Seeing the work of how things turned out from coding and the appreciation from the community of the game is very wholesome.<br>
-    <strong><em><b>I am hoping to be able to make a game that is loved by all and that could make me proud of how far I have come.</b></em></strong></p>
-    </main></div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starting Page</title>
+    <link rel="icon" href="favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="hamburgerbutton.js" defer></script>
+  </head>
+  <body>
+    <div id="page-shell">
+      <header class="topbar">
+        <a class="brand" href="index.html">Matthew Fogle</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <nav class="nav-menu" id="nav-menu">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="sandbox.html">Sandbox</a></li>
+            <li><a href="api.html">API</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="page-content">
+        <div class="hero-section">
+          <h1>Matthew Fogle</h1>
+          <p class="subtitle">Web Developer & Game Enthusiast</p>
+        </div>
+
+        <div class="content-wrapper">
+          <article class="content-card">
+            <h2>🎓 What I Learned in Web Design Class</h2>
+            <p>I have taken a web design class in highschool and I enjoyed creating a small website. Seeing how the URLs and functions work together has been fascinating. We ended up making a <em>fully functional game</em> in the class, which was pretty cool!</p>
+            <p><strong>My game was a clicker game</strong> - one of the most rewarding projects I've worked on.</p>
+          </article>
+
+          <article class="content-card">
+            <h2>🎮 What the Game Did</h2>
+            <p><em>It had a few buttons and images to click on.</em> When you clicked a button, you would increment your money. Once you reached a certain amount, you could upgrade your clicking to earn more money per click.</p>
+            <p>Although it was small and silly, the coding aspect fascinated me. Seeing how the variables and button mechanics worked together really sparked my interest in programming.</p>
+          </article>
+
+          <article class="content-card">
+            <h2>🚀 My Vision for the Future</h2>
+            <p>The way video games are coded and operate is what inspired me to become a video game designer. Seeing how creative work translates into code and receiving appreciation from the community is truly wholesome.</p>
+            <p><strong><em>I am hoping to make a game that is loved by all and that could make me proud of how far I have come.</em></strong></p>
+          </article>
+        </div>
+      </main>
+    </div>
     <script src="keylogger.js"></script>
   </body>
-
 </html>

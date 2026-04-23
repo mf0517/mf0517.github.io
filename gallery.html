@@ -1,45 +1,74 @@
 <!DOCTYPE html>
-<html>
-    <head>
-    <title>Contact</title>
-    <link rel="icon" href="favicon.jpg">
-    <nav>
-    <a href="index.html">Back to home page</a><br>
-    <a href="contact.html">Contact</a>
-    <a href="resume.html">Resume</a>
-    <a href="sandbox.html">Sandbox</a>
-    <a href="api.html">API Page</a>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <link rel="icon" href="favicon.jpg" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="hamburgerbutton.js" defer></script>
     <script src="collapsiblesections.js" defer></script>
-    </nav>
-    <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <section>
-            <button type="button" class="collapsible">+</button>
-            <div class="content">
-            <p>Videogames</p>
-            <img src="rainbowsix.png">
-            <img src="fnaf.jpg" style="float:right">
-            <img src="cod.jpg">
-            <img src="val.jpg" style="float:right">
-            </div>
-        </section>
-        <button type="button" class="collapsible">+</button>
-        <div class="content">
-        <p><b>There are many games that I have played these are the few of my favorites</b></p>
-        <section>
-            <p>Gameplay of me playing Five Nights At Freddy's</p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/pbSB1jNMkgE?si=uXC0mRhFECKmJn7b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </head>
+  <body>
+    <div id="page-shell">
+      <header class="topbar">
+        <a class="brand" href="index.html">Matthew Fogle</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <nav class="nav-menu" id="nav-menu">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="sandbox.html">Sandbox</a></li>
+            <li><a href="api.html">API</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="page-content">
+        <div class="gallery-container">
+            <h1>Game Gallery</h1>
+            
+            <section class="gallery-section">
+                <button type="button" class="collapsible">🎮 Videogames Collection</button>
+                <div class="content">
+                    <p>Check out some of my favorite games:</p>
+                    <div class="image-grid">
+                        <img src="rainbowsix.png" alt="Rainbow Six">
+                        <img src="fnaf.jpg" alt="Five Nights at Freddy's">
+                        <img src="cod.jpg" alt="Call of Duty">
+                        <img src="val.jpg" alt="Valorant">
+                    </div>
+                </div>
+            </section>
+
+            <section class="gallery-section">
+                <button type="button" class="collapsible">▶️ Gameplay Videos</button>
+                <div class="content">
+                    <p><b>There are many games that I have played. These are some of my favorites in action:</b></p>
+                    <div class="video-container">
+                        <p>Gameplay of me playing Five Nights At Freddy's</p>
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/pbSB1jNMkgE?si=uXC0mRhFECKmJn7b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
+
+            <section class="gallery-section">
+                <button type="button" class="collapsible">🎵 Audio</button>
+                <div class="content">
+                    <p>My favorite ending dialogue</p>
+                    <div class="audio-container">
+                        <audio controls>
+                            <source src="henryspeech.mp3">
+                        </audio>
+                    </div>
+                </div>
+            </section>
         </div>
-        </section>
-        <section>
-            <button type="button" class="collapsible">+</button>
-            <div class="content">
-            <p>My favorite ending dialogue</p>
-            <audio controls>
-                <source src="henryspeech.mp3">
-            </audio>
-            </div>
-        </section>
     </body>
 </html>
