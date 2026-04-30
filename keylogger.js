@@ -15,6 +15,8 @@ function eventHandler(event) {
 function specialRules(key, count)
 {
     if(key === 'n' && count === 7){
-         document.body.style.setProperty("background-color", "#FFC0CB");
+         const hero = document.querySelector('.hero-section');
+        if (hero) {
+            hero.style.setProperty('background-color', '#FFC0CB');        }
     }
 }
